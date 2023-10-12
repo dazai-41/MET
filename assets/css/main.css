@@ -6,6 +6,9 @@
     --red-color: #FF3E41; 
     --divider-color: #292B32;
     --light-gray: #313538;
+    --section-gray: #25292C;
+    --title-gray: #7F8589;
+    --divider-section: #303638;
 }
 
 body{
@@ -285,12 +288,165 @@ header .user-action div:hover, header .user-action a:hover{
     background: #1c9749;
 }
 
-
-
 .contacts-wrapp .contact-btn-wrapp:hover .text-wrapp{
     opacity: 1;
     pointer-events: all;
     right: 0;
+}
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 128px 0;
+}
+
+.about-us .container-section-wrapp{
+    margin: 0;
+}
+
+.container-section-wrapp{
+    width: 100%;
+    margin: 128px 0;
+}
+
+.container-section-wrapp .container-section{
+    margin: 0 auto;
+    max-width: 1314px;
+    height: auto;
+    background: var(--section-gray);
+    border-radius: 28px;
+    padding: 72px 0;
+}
+
+.container-section-wrapp:nth-child(1) .container-section{
+    display: flex;
+    padding: 0;
+}
+
+.container-section-wrapp:nth-child(1)  .container-section.right-content{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.container-section-wrapp .container-section .title{
+    font-size: 40px;
+    color: var(--text-color-active);
+    font-weight: 600;
+}
+
+.container-section-wrapp:nth-child(1) .container-section{
+    height: 600px;
+}
+
+.container-section-wrapp .container-section:first-child .left-content{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: max-content;
+    margin-left: 72px;
+    max-width: 612px;
+    gap: 72px;
+}
+
+.container-section-wrapp .container-section:first-child .left-content .description{
+    display: flex;
+    gap: 72px;
+}
+
+.container-section-wrapp .container-section:first-child .left-content .description .title{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: .05;
+    color: var(--title-gray);
+    text-transform: uppercase;
+    margin-bottom: 28px;
+}
+
+.container-section-wrapp .container-section:first-child .left-content .description .table {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.container-section-wrapp .container-section:first-child .left-content .description .table .item{
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--divider-section);
+    padding-bottom: 12px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container-section-wrapp:nth-child(2) .container-section{
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    padding-bottom: 0;
+}
+
+.container-section-wrapp:nth-child(2) .container-section .title{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.container-section-wrapp:nth-child(2) .container-section .content .title{
+    font-size: 24px;
+    width: max-content;
+}
+
+.container-section-wrapp:nth-child(2) .container-section .content{
+    margin: 0 72px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-section-wrapp:nth-child(2) .container-section .title span{
+    max-width: 716px;
+    text-align: center;
+}
+
+.container-section-wrapp:nth-child(2) .container-section .content .item {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.container-section-wrapp:nth-child(2) .container-section .content .item .description{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.container-section-wrapp:nth-child(2) .container-section .content .item.more .title{
+    width: auto;
+}
+
+.container-section-wrapp:nth-child(2) .container-section .content .item.more {
+    max-width: 271px;
+    text-wrap: wrap;
+}
+
+.container-section-wrapp:nth-child(2) .container-section .content .item.more a{
+    text-decoration: underline;
+    color: var(--red-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container-section-wrapp:nth-child(2) .container-section .content .img{
+    max-width: 672px;
+}
+
+.container-section-wrapp:nth-child(2) .container-section .content .img img{
+    width: 100%;
 }
 
 /* Подключение шрифтов */
