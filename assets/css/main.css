@@ -274,8 +274,18 @@ header .user-action div:hover, header .user-action a:hover{
 }
 
 .contacts-wrapp .contact-btn-wrapp:hover .contact-btn{
+    background: var(--red-color);
+}
+
+.contacts-wrapp .contact-btn-wrapp:hover .contact-btn.telegram{
     background: #259CD8;
 }
+
+.contacts-wrapp .contact-btn-wrapp:hover .contact-btn.whatsapp{
+    background: #1c9749;
+}
+
+
 
 .contacts-wrapp .contact-btn-wrapp:hover .text-wrapp{
     opacity: 1;
