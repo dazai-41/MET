@@ -228,6 +228,61 @@ header .user-action div:hover, header .user-action a:hover{
 }
 
 
+.contacts-wrapp{
+    position: fixed;
+    right: 27px;
+    top: calc(50% - 4 * 48px);
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-wrapp .contact-btn-wrapp{
+    position: relative;
+}
+
+.contacts-wrapp .contact-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--light-gray);
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+    transition: .2s ease-in-out;
+}
+
+.contacts-wrapp .contact-btn-wrapp .text-wrapp{
+    position: absolute;
+    right: 24px;
+    height: 48px;
+    width: 192px;
+    padding-left: 27px;
+    display: flex;
+    align-items: center;
+    background: var(--light-gray);
+    z-index: 1;
+    border-radius: 50px;
+    opacity: 0;
+    pointer-events: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .2s ease-in-out;
+}
+
+.contacts-wrapp .contact-btn-wrapp:hover .contact-btn{
+    background: #259CD8;
+}
+
+.contacts-wrapp .contact-btn-wrapp:hover .text-wrapp{
+    opacity: 1;
+    pointer-events: all;
+    right: 0;
+}
+
 /* Подключение шрифтов */
 
 @font-face {
