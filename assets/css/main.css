@@ -35,6 +35,16 @@ a, a:active, a:focus{
     color: var(--text-color);
 }
 
+input,input:focus,input:active{
+    border: none;
+    background: var(--section-gray);
+    border-radius: 5px;
+    outline: none;
+    color: var(--title-grayw);
+    font-size: 12px;
+    font-weight: 500;
+}
+
 a.isActive{
     color: var( --text-color-active);
 }
@@ -166,6 +176,49 @@ header .other-action{
     display: flex;
     align-items: center;
     gap: 72px;
+}
+
+header .user-action .search-btn-wrapp .search-input-wrapp input{
+    max-width: 432px;
+    width: 432px;
+    padding: 0 18px;
+    height: 38px;
+}
+
+header .user-action .search-btn-wrapp {
+    position: relative;
+}
+
+header .user-action .search-btn-wrapp .search-input-wrapp{
+    position: absolute;
+    right: -30px;
+    top: -3px;
+    display: flex;
+    align-items: center;
+    background: var(--section-gray);
+    border-radius: 5px;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: .2s ease-in-out;
+}
+
+header .user-action .search-btn-wrapp.isActive .search-input-wrapp{
+    opacity: 1;
+    pointer-events: all;
+    right: 0;
+}
+
+header .user-action .search-btn-wrapp .search-input-wrapp img{
+    margin-right: 10px;
+}
+
+header .user-action .search-btn-wrapp.isActive:hover{
+    transform: none;
+}
+
+header .user-action .search-btn-wrapp .search-input-wrapp:hover{
+    transform: none;
 }
 
 header .other-action div.phone{
@@ -305,6 +358,181 @@ header .user-action div:hover, header .user-action a:hover{
     margin: 0;
 }
 
+.prewie-block-wrap {
+    margin-top: 72px;
+    margin-left: 80px;
+    max-width: calc(100% - 160px - 72px);
+}
+
+.prewie-block-wrap .header-wrapp{
+    margin-right: 144px;
+    display: flex;
+    justify-content: end;
+}
+
+.prewie-block-wrap .header-wrapp .video img{
+    position: relative;
+    right: -5px;
+}
+
+.prewie-block-wrap .header-wrapp .header{
+    max-width: 1314px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.prewie-block-wrap .header-wrapp .header .title{
+    max-width: 365px;
+    line-height: 2.35rem;
+}
+
+.prewie-block-wrapp .prewie-block{
+    overflow: hidden;
+}
+
+.content-wrapp {
+    max-width: calc(100% - 72px + 60px);
+    margin-left: calc(72px + 60px);
+    position: relative;
+}
+
+.content-wrapp .content{
+    width: max-content;
+    display: flex;
+    width: max-content;
+    gap: 220px;
+    position: relative;
+    left: 0;
+    transition: .2s ease;
+}
+
+.content-wrapp .content .item{
+    display: flex;
+    align-items: center;
+    width: 754px;
+    height: 600px;
+}
+
+.content-wrapp .content .item .title-wrapp{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: relative;
+    right: -30px;
+    pointer-events: all;
+    opacity: 0;
+    z-index: 999;
+}
+
+.content-wrapp .content .item.isActive .title-wrapp{
+    opacity: 1;
+    pointer-events: none;
+    right: 0;
+}
+
+.content-wrapp .content .item .title-wrapp .title{
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 1.15em;
+    color: var(--text-color-active);
+}
+
+.content-wrapp .content .item .title-wrapp .link{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.content-wrapp .content .item .title-wrapp .link span, .content-wrapp .content .item .title-wrapp .link img{
+    pointer-events: all;
+}
+
+.content-wrapp .content .item .img{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s ease;
+}
+
+.content-wrapp .content .item .img img{
+    width: 100%;
+    filter: blur(8px);
+    position: relative;
+    top: -72px;
+    transition: .2s ease;
+}
+
+.content-wrapp .content .item.isActive .img{
+    width: 438px;
+    height: 600px;
+}
+
+.content-wrapp .content .item.isActive .img img{
+    top: -72px;
+    width: max-content;
+    filter: blur(0);
+}
+
+.content-wrapp .content .item.hardness-testers.isActive .img img{
+    width: 728px;
+}
+
+.content-wrapp .content .item.hardness-measures{
+    gap: 72px
+}
+
+.content-wrapp .content .item.hardness-measures .img {
+    max-width: 312px;
+} 
+
+.content-wrapp .content .item.hardness-testers .img img{
+    width: 492px; 
+}
+
+.content-wrapp .content .arrows-slider{
+    display: none;
+}
+
+.content-wrapp .arrows-slider{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+}
+
+.content-wrapp .arrows-slider .arrow{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    font-size: 32px;
+    color: var(--text-color-active);
+    font-weight: 600;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    right: 0;
+    z-index: 9999;
+}
+
+.content-wrapp .arrows-slider .arrow.isActive{
+    opacity: 0;
+    right: -30px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.content-wrapp .arrows-slider .arrow:first-child{
+    flex-direction: row-reverse;
+}
+
 .container-section-wrapp{
     width: 100%;
     margin: 128px 0;
@@ -324,7 +552,7 @@ header .user-action div:hover, header .user-action a:hover{
     padding: 0;
 }
 
-.container-section-wrapp:nth-child(1)  .container-section.right-content{
+.container-section-wrapp:nth-child(1)  .container-section .right-content{
     display: flex;
     justify-content: end;
     width: 100%;

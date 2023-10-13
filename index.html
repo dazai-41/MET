@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MET</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
-<body>
+<body style='overflow-x:hidden;'>
     <!-- Шапка -->
     <header>
         <div class="header-container">
@@ -77,8 +78,10 @@
         <!-- Кнопки действия -->
         <div class="other-action">
             <div class="phone">
-                <img src="assets//img/Phone.svg">
-                <a href="tel:+78002227526">8 (800) 222-75-26</a>
+                <a href="tel:+78002227526">
+                    <img src="assets//img/Phone.svg">
+                    <span>8 (800) 222-75-26</span>
+                </a>
             </div>
             <div class="language">
                 <img src="assets/img/Web.svg">
@@ -91,7 +94,10 @@
                 <div class="search-btn">
                     <img src="assets/img/Search.svg">
                 </div>
-                <div class="search-input-wrapp"></div>
+                <div class="search-input-wrapp">
+                    <input type="text" placeholder="ПОИСК">
+                    <img src="assets/img/Search.svg">
+                </div>
             </div>
             <a class="cart-btn isActive">
                 <img src="assets/img/Cart.svg">
@@ -140,7 +146,69 @@
     <!-- Основной контент -->
     
     <!-- Превью блок -->
-
+    <div class="prewie-block-wrap">
+        <div class="progress-section"></div>
+        <div class="prewie-block">
+            <div class="header-wrapp">
+                <div class="header">
+                    <div class="title">Точность без компромисcов</div>
+                    <a href="" class="video">
+                        <img src="assets/img/video.svg">
+                    </a>
+                </div>
+            </div>
+                <!-- Карусель обертка-->
+            <div class="content-wrapp">
+                <!-- ПК стрелки карусели -->
+                <div class="arrows-slider">
+                    <div class="arrow hardness-testers isActive">
+                        <img src="assets/img/prewieArrow.svg">
+                        <span>Твердомеры</span>
+                    </div>
+                    <div class="arrow hardness-measures">
+                        <img src="assets/img/prewieArrow.svg">
+                        <span>Меры твердости</span>
+                    </div>
+                </div>
+                <!-- Карусель -->
+                <div class="content">
+                    <div class="item hardness-testers isActive">
+                        <div class="title-wrapp">
+                            <div class="title">Твердомеры</div>
+                            <a href="#" class="link">
+                                <img src="assets/img/rectanglePrewie.svg">
+                                <span>Как выбрать</span>
+                            </a>
+                        </div>
+                        <div class="img">
+                            <img src="assets/img/hardnessTesters.png">
+                        </div>
+                    </div>
+                    <div class="item hardness-measures">
+                        <div class="img">
+                            <img src="assets/img/hardnessMeasures.png">
+                        </div>
+                        <div class="title-wrapp">
+                            <div class="title">Меры твердости</div>
+                            <a href="#" class="link">
+                               <img src="assets/img/rectanglePrewie.svg">
+                               <span>Проверка подлинности</span>     
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Стрелки карусели для мобилки -->
+                    <div class="arrows-slider">
+                        <div class="arrow hardness-testers">
+                            <span>Твердомеры</span>
+                        </div>
+                        <div class="arrow hardness-measures">
+                            <span>Меры твердости</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- О нас -->
     <div class="about-us">
     <div class="container-section-wrapp">
@@ -281,5 +349,5 @@
 
     <!-- Футер -->
 </body>
-<script src="assets/js/script.js"></script>
+<script src="assets/js/main.js"></script>
 </html>
