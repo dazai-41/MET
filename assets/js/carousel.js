@@ -1,19 +1,21 @@
 $(document).ready(function(){
-    $("#productsCarousel").owlCarousel({
-        loop:true,
-        mouseDrag: false,
-        touchDrag: false,
-        margin: 30,
-        navText : ["<img src='assets/img/left-arrow.svg'>","<img src='assets/img/right-arrow.svg'>"],
-        nav:true,
-        items:2
-    });
-
-    $('#productsCarouselPhoto').owlCarousel({
-        loop:true,
-        margin: 0,
-        nav:false,
+    
+    $(productsCarouselPhoto).slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
         dots: true,
-        items: 1
-    });
-  });
+        customPaging : function(slider, i) {
+            return '<div class="slick-dot></div>';
+        },
+        arrows:false
+    })
+
+    $(productsCarousel).slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: false,
+        arrows:true,
+    })
+});
