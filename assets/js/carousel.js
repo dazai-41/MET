@@ -8,10 +8,19 @@ $(document).ready(function(){
         customPaging : function(slider, i) {
             return '<div class="slick-dot></div>';
         },
-        arrows:false
+        arrows:false,
+        infinite: false,
     })
 
     $(productsCarousel).slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: false,
+        arrows:true,
+    })
+
+    $(sliderNews).slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         infinite: false,
