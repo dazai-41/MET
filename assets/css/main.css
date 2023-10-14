@@ -9,6 +9,7 @@
     --section-gray: #25292C;
     --title-gray: #7F8589;
     --divider-section: #303638;
+    --slider-bg-color: #F5F5F5;
 }
 
 body{
@@ -871,6 +872,202 @@ header .user-action div:hover, header .user-action a:hover{
     bottom: -10px;
     left: 0;
     background: var(--text-color);
+}
+
+.white-container-wrapp{
+    width: 100%;
+    background: #fff;]
+    position: relative;
+}
+
+.white-container{
+    max-width: 1314px;
+    margin: 0 auto;
+    padding: 128px 0;
+}
+
+.white-container .title-wrapp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 72px;
+    margin-bottom: 20px;
+}
+
+.white-container .title-wrapp .title{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--bg-fill);
+    text-align: center;
+}
+
+.white-container.our-products{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.white-container.our-products .title-wrapp .filter-wrapp{
+    position: relative;
+}
+
+.white-container.our-products .title-wrapp .filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 1314px;
+    margin: 0 auto;
+}
+
+.white-container.our-products .title-wrapp .filter-wrapp::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: var(--text-color);
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+.white-container.our-products .title-wrapp .filter .filter-item:last-child a{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: var(--bg-fill);
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.white-container.our-products .title-wrapp .filter .tabs{
+    display: flex;
+    gap: 56px;
+}
+
+.white-container.our-products .title-wrapp .filter .tabs .tab-item{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #7F8589;
+    cursor: pointer;
+    position: relative;
+}
+
+.white-container.our-products .title-wrapp .filter .tabs .tab-item.isActive{
+    color: var(--bg-fill);
+}
+
+.white-container.our-products .title-wrapp .filter .tabs .tab-item::before{
+    content: "";
+    height: 1px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+.white-container.our-products .title-wrapp .filter .tabs .tab-item.isActive::before{
+    background: var(--bg-fill);
+    width: 100%;
+}
+
+.white-container.our-products .owl-carousel.products .item .footer-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.white-container.our-products .owl-carousel.products .item .footer-item .price-wrapp{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.white-container.our-products .owl-carousel.products .item .footer-item .price-wrapp .price{
+    display: flex;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--title-gray);
+}
+
+.white-container.our-products .owl-carousel.products .item .footer-item .price-wrapp .price .current-price{
+    font-weight: 600;
+    color: var(--bg-fill);
+}
+
+.white-container.our-products .owl-carousel.products .item .footer-item .action-btn-wrapp{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.white-container.our-products .owl-carousel.products .item .footer-item .action-btn-wrapp div{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-container.our-products .owl-carousel.products .item .footer-item .action-btn-wrapp div img{
+    width: 28px;
+    height: 28px;
+}
+
+.white-container.our-products .owl-carousel.products .item .footer-item .action-btn-wrapp .cart-btn{
+    background: var(--red-color);
+}
+
+.white-container.our-products .owl-carousel.products .item .footer-item .action-btn-wrapp .move-btn{
+    background: var(--bg-fill);
+}
+
+.white-container.our-products .owl-carousel.products .item .photo-item{
+    max-width: 370px;
+    max-height: 338px;
+}
+
+.white-container.our-products .carousel-wrapp{
+    max-width: 1314px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.white-container.our-products .owl-carousel.products{
+    width: max-content;
+    display: flex;  
+}
+
+.white-container.our-products .owl-carousel.products .item .photo-slider{
+    overflow: hidden;
+    width: 370px;
+    height: 338px;
+    margin: 0 auto;
+}
+.white-container.our-products .owl-carousel.products {
+    display: flex;
+    flex-direction: column;
+}
+
+.white-container.our-products .owl-carousel.products .item{
+    width: 418px;
+    background: var(--slider-bg-color);
+    display: flex;
+    flex-direction: column;
+    padding: 48px 40px;
+    border-radius: 35px;
+}
+
+.white-container.our-products .owl-carousel.products .item .title{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--bg-fill);
+    max-width: 242px;
 }
 
 /* Подключение шрифтов */
