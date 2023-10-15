@@ -1,589 +1,713 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MET</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/script/slick/slick.css"/>
-</head>
-<body style='overflow-x:hidden;'>
-    <!-- Шапка -->
-    <header>
-        <div class="header-container">
-        <!-- Лого -->
-        <a href="" class="logo">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>MET</title>
+      <link rel="stylesheet" href="assets/css/main.css">
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="assets/script/slick/slick.css"/>
+   </head>
+   <body style='overflow-x:hidden;'>
+      <!-- Шапка -->
+      <header>
+         <div class="header-container">
+            <!-- Лого -->
+            <a href="" class="logo">
             <img src="assets/img/logo.svg" alt="MET">
-        </a>
-        <!-- Меню -->
-        <nav>
-            <ul class="nav-header">
-                <li>
-                    <a href="">
-                        компания 
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="isActive">
-                        продукция
-                    </a>
-                    <div class="pop-up-links">
+            </a>
+            <!-- Меню -->
+            <nav>
+               <ul class="nav-header">
+                  <li>
+                     <a href="">
+                     компания 
+                     </a>
+                  </li>
+                  <li>
+                     <a href="" class="isActive">
+                     продукция
+                     </a>
+                     <div class="pop-up-links">
                         <ul>
-                            <li>
-                                <a href="">
-                                    Твердомеры
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Меры твердости
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Подобрать твердомер
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Подобрать меры твердости
-                                </a>
-                            </li>
+                           <li>
+                              <a href="">
+                              Твердомеры
+                              </a>
+                           </li>
+                           <li>
+                              <a href="">
+                              Меры твердости
+                              </a>
+                           </li>
+                           <li>
+                              <a href="">
+                              Подобрать твердомер
+                              </a>
+                           </li>
+                           <li>
+                              <a href="">
+                              Подобрать меры твердости
+                              </a>
+                           </li>
                         </ul>
-                    </div>
-                </li>
-                <li>
-                    <a href="">
-                        Дилеры
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        инфоцентр
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        проверка подлинности
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        контакты
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <!-- Кнопки действия -->
-        <div class="other-action">
-            <div class="phone">
-                <a href="tel:+78002227526">
-                    <img src="assets//img/Phone.svg">
-                    <span>8 (800) 222-75-26</span>
-                </a>
+                     </div>
+                  </li>
+                  <li>
+                     <a href="">
+                     Дилеры
+                     </a>
+                  </li>
+                  <li>
+                     <a href="">
+                     инфоцентр
+                     </a>
+                  </li>
+                  <li>
+                     <a href="">
+                     проверка подлинности
+                     </a>
+                  </li>
+                  <li>
+                     <a href="">
+                     контакты
+                     </a>
+                  </li>
+               </ul>
+            </nav>
+            <!-- Кнопки действия -->
+            <div class="other-action">
+               <div class="phone">
+                  <a href="tel:+78002227526">
+                  <img src="assets//img/Phone.svg">
+                  <span>8 (800) 222-75-26</span>
+                  </a>
+               </div>
+               <div class="language">
+                  <img src="assets/img/Web.svg">
+                  <span>ENG</span>
+               </div>
             </div>
-            <div class="language">
-                <img src="assets/img/Web.svg">
-                <span>ENG</span>
+            <!-- Кнопки пользователя -->
+            <div class="user-action">
+               <div class="search-btn-wrapp">
+                  <div class="search-btn">
+                     <img src="assets/img/Search.svg">
+                  </div>
+                  <div class="search-input-wrapp">
+                     <input type="text" placeholder="ПОИСК">
+                     <img src="assets/img/Search.svg">
+                  </div>
+               </div>
+               <a class="cart-btn isActive">
+               <img src="assets/img/Cart.svg">
+               </a>
+               <a class="profile-btn">
+               <img src="assets/img/User.svg">
+               </a>
             </div>
-        </div>
-        <!-- Кнопки пользователя -->
-        <div class="user-action">
-            <div class="search-btn-wrapp">
-                <div class="search-btn">
-                    <img src="assets/img/Search.svg">
-                </div>
-                <div class="search-input-wrapp">
-                    <input type="text" placeholder="ПОИСК">
-                    <img src="assets/img/Search.svg">
-                </div>
-            </div>
-            <a class="cart-btn isActive">
-                <img src="assets/img/Cart.svg">
-            </a>
-            <a class="profile-btn">
-                <img src="assets/img/User.svg">
-            </a>
-        </div>
-    </div>
-    </header>
-<!-- Фиксированные контакты -->
-    <div class="contacts-wrapp">
-        <a href="" class="contact-btn-wrapp">
+         </div>
+      </header>
+      <!-- Фиксированные контакты -->
+      <div class="contacts-wrapp">
+         <a href="" class="contact-btn-wrapp">
             <div class="text-wrapp">
-                <span>Telegram</span>
+               <span>Telegram</span>
             </div>
             <div class="contact-btn telegram">
-                <img src="assets/img/Telegram.svg">
+               <img src="assets/img/Telegram.svg">
             </div>
-        </a>
-        <a href="" class="contact-btn-wrapp">
+         </a>
+         <a href="" class="contact-btn-wrapp">
             <div class="text-wrapp">
-                <span>Whatsapp</span>
+               <span>Whatsapp</span>
             </div>
             <div class="contact-btn whatsapp">
-                <img src="assets/img/Whatsapp.svg">
+               <img src="assets/img/Whatsapp.svg">
             </div>
-        </a>
-        <a href="" class="contact-btn-wrapp">
+         </a>
+         <a href="" class="contact-btn-wrapp">
             <div class="text-wrapp">
-                <span>Почта</span>
+               <span>Почта</span>
             </div>
             <div class="contact-btn">
-                <img src="assets/img/sms.svg">
+               <img src="assets/img/sms.svg">
             </div>
-        </a>
-        <a href="" class="contact-btn-wrapp">
+         </a>
+         <a href="" class="contact-btn-wrapp">
             <div class="text-wrapp">
-                <span>Поддержка</span>
+               <span>Поддержка</span>
             </div>
             <div class="contact-btn">
-                <img src="assets/img/message.svg">
+               <img src="assets/img/message.svg">
             </div>
-        </a>
-    </div>
-    <!-- Основной контент -->
-    
-    <!-- Превью блок -->
-    <div class="prewie-block-wrap">
-        <div class="progress-section"></div>
-        <div class="prewie-block">
+         </a>
+      </div>
+      <!-- Основной контент -->
+      <!-- Превью блок -->
+      <div class="prewie-block-wrap" id="prewie-block">
+         <div class="progress-section">
+            <div class="progress-bar">
+               <a href="#prewie-block" class="progress-bar-item isActive">01</a>
+               <a href="#aboudUS" class="progress-bar-item">02</a>
+               <a href="#ourProducts" class="progress-bar-item">03</a>
+               <a href="#argumentsSection" class="progress-bar-item">04</a>
+               <a href="#ourProductionSection" class="progress-bar-item">05</a>
+               <a href="#infoCenter" class="progress-bar-item">06</a>
+            </div>
+            <div class="image">
+               <div class="name">вниз</div>
+               <img src="assets/img/scrollDown.svg" class="img">
+            </div>
+         </div>
+         <div class="prewie-block">
             <div class="header-wrapp">
-                <div class="header">
-                    <div class="title">Точность без компромисcов</div>
-                    <a href="" class="video">
-                        <img src="assets/img/video.svg">
-                    </a>
-                </div>
+               <div class="header">
+                  <div class="title">Точность без компромисcов</div>
+                  <a href="" class="video">
+                  <img src="assets/img/video.svg">
+                  </a>
+               </div>
             </div>
-                <!-- Карусель обертка-->
+            <!-- Карусель обертка-->
             <div class="content-wrapp">
-                <!-- ПК стрелки карусели -->
-                <div class="arrows-slider">
-                    <div class="arrow hardness-testers isActive">
-                        <img src="assets/img/prewieArrow.svg">
+               <!-- ПК стрелки карусели -->
+               <div class="arrows-slider">
+                  <div class="arrow hardness-testers isActive">
+                     <img src="assets/img/prewieArrow.svg">
+                     <span>Твердомеры</span>
+                  </div>
+                  <div class="arrow hardness-measures">
+                     <img src="assets/img/prewieArrow.svg">
+                     <span>Меры твердости</span>
+                  </div>
+               </div>
+               <!-- Карусель -->
+               <div class="content">
+                  <div class="item hardness-testers isActive">
+                     <div class="title-wrapp">
+                        <div class="title">Твердомеры</div>
+                        <a href="#" class="link">
+                        <img src="assets/img/rectanglePrewie.svg">
+                        <span>Как выбрать</span>
+                        </a>
+                     </div>
+                     <div class="img">
+                        <img src="assets/img/hardnessTesters.png">
+                     </div>
+                  </div>
+                  <div class="item hardness-measures">
+                     <div class="img">
+                        <img src="assets/img/hardnessMeasures.png">
+                     </div>
+                     <div class="title-wrapp">
+                        <div class="title">Меры твердости</div>
+                        <a href="#" class="link">
+                        <img src="assets/img/rectanglePrewie.svg">
+                        <span>Проверка подлинности</span>     
+                        </a>
+                     </div>
+                  </div>
+                  <!-- Стрелки карусели для мобилки -->
+                  <div class="arrows-slider">
+                     <div class="arrow hardness-testers">
                         <span>Твердомеры</span>
-                    </div>
-                    <div class="arrow hardness-measures">
-                        <img src="assets/img/prewieArrow.svg">
+                     </div>
+                     <div class="arrow hardness-measures">
                         <span>Меры твердости</span>
-                    </div>
-                </div>
-                <!-- Карусель -->
-                <div class="content">
-                    <div class="item hardness-testers isActive">
-                        <div class="title-wrapp">
-                            <div class="title">Твердомеры</div>
-                            <a href="#" class="link">
-                                <img src="assets/img/rectanglePrewie.svg">
-                                <span>Как выбрать</span>
-                            </a>
-                        </div>
-                        <div class="img">
-                            <img src="assets/img/hardnessTesters.png">
-                        </div>
-                    </div>
-                    <div class="item hardness-measures">
-                        <div class="img">
-                            <img src="assets/img/hardnessMeasures.png">
-                        </div>
-                        <div class="title-wrapp">
-                            <div class="title">Меры твердости</div>
-                            <a href="#" class="link">
-                               <img src="assets/img/rectanglePrewie.svg">
-                               <span>Проверка подлинности</span>     
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Стрелки карусели для мобилки -->
-                    <div class="arrows-slider">
-                        <div class="arrow hardness-testers">
-                            <span>Твердомеры</span>
-                        </div>
-                        <div class="arrow hardness-measures">
-                            <span>Меры твердости</span>
-                        </div>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-    <!-- О нас -->
-    <div class="about-us">
-    <div class="container-section-wrapp">
-        <div class="container-section">
-            <div class="left-content">
-                <div class="title">Достоверное измерение твердости по всем шкалам</div>
-                <div class="description">
-                    <div class="main">
+         </div>
+      </div>
+      <!-- О нас -->
+      <div class="about-us" id="aboudUS">
+         <div class="container-section-wrapp">
+            <div class="container-section">
+               <div class="left-content">
+                  <div class="title">Достоверное измерение твердости по всем шкалам</div>
+                  <div class="description">
+                     <div class="main">
                         <div class="title">Основные</div>
                         <div class="table">
-                            <div class="item">
-                                <span>Роквелла</span>
-                                <span>HRC</span>
-                            </div>
-                            <div class="item">
-                                <span>Бринелля</span>
-                                <span>HB</span>
-                            </div>
-                            <div class="item">
-                                <span>Виккерса</span>
-                                <span>HV</span>
-                            </div>
-                            <div class="item">
-                                <span>Шора</span>
-                                <span>HSD</span>
-                            </div>
+                           <div class="item">
+                              <span>Роквелла</span>
+                              <span>HRC</span>
+                           </div>
+                           <div class="item">
+                              <span>Бринелля</span>
+                              <span>HB</span>
+                           </div>
+                           <div class="item">
+                              <span>Виккерса</span>
+                              <span>HV</span>
+                           </div>
+                           <div class="item">
+                              <span>Шора</span>
+                              <span>HSD</span>
+                           </div>
                         </div>
-                    </div>
-                    <div class="other">
+                     </div>
+                     <div class="other">
                         <div class="title">Дополнительные</div>
                         <div class="table">
-                            <div class="item">
-                                <span>Роквелла</span>
-                                <span>HRB</span>
-                            </div>
-                            <div class="item">
-                                <span>Супер-Роквелла</span>
-                                <span>HRN / HRT</span>
-                            </div>
-                            <div class="item">
-                                <span>Лейба</span>
-                                <span>HL</span>
-                            </div>
-                            <div class="item">
-                                <span>и другие...</span>
-                                <span></span>
-                            </div>
+                           <div class="item">
+                              <span>Роквелла</span>
+                              <span>HRB</span>
+                           </div>
+                           <div class="item">
+                              <span>Супер-Роквелла</span>
+                              <span>HRN / HRT</span>
+                           </div>
+                           <div class="item">
+                              <span>Лейба</span>
+                              <span>HL</span>
+                           </div>
+                           <div class="item">
+                              <span>и другие...</span>
+                              <span></span>
+                           </div>
                         </div>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="right-content">
+                  <img src="assets/img/aboutUs1.png">
+               </div>
             </div>
-            <div class="right-content">
-                <img src="assets/img/aboutUs1.png">
-            </div>
-        </div>
-    </div>
-    <div class="container-section-wrapp">
-        <div class="container-section">
-            <div class="title"><span>Ультразвуковой и динамический датчики</span></div>
-            <div class="content">
-                <div class="item">
-                    <div class="title">Включен в Госреестр СИ</div>
-                    <div class="description">
+         </div>
+         <div class="container-section-wrapp">
+            <div class="container-section">
+               <div class="title"><span>Ультразвуковой и динамический датчики</span></div>
+               <div class="content">
+                  <div class="item">
+                     <div class="title">Включен в Госреестр СИ</div>
+                     <div class="description">
                         <span>―  Действие поверки 1 год</span>
                         <span>―  Поставляется поверенным</span>
-                    </div>
-                </div>
-                <div class="img">
-                    <img src="assets/img/aboutUs2.png">
-                </div>
-                <div class="item more">
-                    <div class="title">Быстрая калибровка по мерам 1 разряда</div>
-                    <a href="#">Подробнее</a>
-                </div>
+                     </div>
+                  </div>
+                  <div class="img">
+                     <img src="assets/img/aboutUs2.png">
+                  </div>
+                  <div class="item more">
+                     <div class="title">Быстрая калибровка по мерам 1 разряда</div>
+                     <a href="#">Подробнее</a>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-    <div class="container-section-wrapp">
-        <div class="container-section">
-            <div class="left-content">
-                <img src="assets/img/aboutUs3.png">
-            </div>
-            <div class="right-content">
-                <div class="up">
-                    <div class="title">Измерение твёрдости по основным шкалам</div>
-                    <div class="description">
+         </div>
+         <div class="container-section-wrapp">
+            <div class="container-section">
+               <div class="left-content">
+                  <img src="assets/img/aboutUs3.png">
+               </div>
+               <div class="right-content">
+                  <div class="up">
+                     <div class="title">Измерение твёрдости по основным шкалам</div>
+                     <div class="description">
                         Достигается за счет калибровки только с помощью эталонных <a href="#">мер твердости</a> без использования переводных таблиц, которые «зашиты» в программы других твердомеров, увеличивающих погрешность измерения.
-                    </div>
-                </div>
-                <div class="down">
-                    <a href="#">Выбрать товары</a>
-                </div>
+                     </div>
+                  </div>
+                  <div class="down">
+                     <a href="#">Выбрать товары</a>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-    <div class="container-section-wrapp">
-        <div class="tripple-section">
-            <div class="item item-title">
-                <div class="up">
-                    <div class="title">Высокая степень защиты корпуса</div>
-                    <div class="description">
+         </div>
+         <div class="container-section-wrapp">
+            <div class="tripple-section">
+               <div class="item item-title">
+                  <div class="up">
+                     <div class="title">Высокая степень защиты корпуса</div>
+                     <div class="description">
                         <div>Влагозащищенность: <span>IP65</span></div>
                         <div>Температура: <span>от -20°C до + 60°C</span></div>
                         <div>Ударопрочность: <span>IK06</span></div>
-                    </div>
-                </div>
-                <div class="down">
-                    <img src="assets/img/aboutUs4.png">
-                </div>
-            </div>
-            <div class="right-item-wrapp">
-                <div class="item item-description">
-                    <div class="left-content">
+                     </div>
+                  </div>
+                  <div class="down">
+                     <img src="assets/img/aboutUs4.png">
+                  </div>
+               </div>
+               <div class="right-item-wrapp">
+                  <div class="item item-description">
+                     <div class="left-content">
                         Удобная передача и обработка данных на компьютере через высокоскоростной USB порт и специальное программное обеспечение.
-                    </div>
-                    <div class="right-content">
+                     </div>
+                     <div class="right-content">
                         <img src="assets/img/aboutUs5.png">
-                    </div>
-                </div>
-                <div class="item item-garant">
-                    <div class="link"><a href="">Подробнее</a></div>
-                    <div class="title">
+                     </div>
+                  </div>
+                  <div class="item item-garant">
+                     <div class="link"><a href="">Подробнее</a></div>
+                     <div class="title">
                         <span>3</span>
                         <div class="description">года <br> гарантии</div>
-                    </div>
-                </div>
-        </div>
-        </div>
-    </div>
-    </div>
-    <!-- Наша продукция -->
-    <div class="white-container-wrapp">
-        <div class="white-container our-products">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Наша продукция -->
+      <div class="white-container-wrapp" id="ourProducts">
+         <div class="white-container our-products">
             <div class="title-wrapp">
-                <div class="title">Наша продукция</div>
-                <div class="filter-wrapp">
-                    <div class="filter">
-                        <div class="filter-item tabs">
-                            <div class="tab-item isActive">
-                                <span>Твердомеры</span>
-                            </div>
-                            <div class="tab-item">
-                                <span>Меры твердости</span>
-                            </div>
+               <div class="title">Наша продукция</div>
+               <div class="filter-wrapp">
+                  <div class="filter">
+                     <div class="filter-item tabs">
+                        <div class="tab-item isActive">
+                           <span>Твердомеры</span>
                         </div>
-                        <div class="filter-item">
-                            <a href="#">
-                                <img src="assets/img/menu.svg">
-                                <span>В каталог</span>
-                            </a>
-                        </div> 
-                    </div>
-                </div>
+                        <div class="tab-item">
+                           <span>Меры твердости</span>
+                        </div>
+                     </div>
+                     <div class="filter-item">
+                        <a href="#">
+                        <img src="assets/img/menu.svg">
+                        <span>В каталог</span>
+                        </a>
+                     </div>
+                  </div>
+               </div>
             </div>
             <div class="carousel-wrapp">
-                <div class="slider" id="productsCarousel">
-                    <div class="item carousel-item">
-                        <div class="title">Ультразвуковой твердомер МЕТ-УДА</div>
-                        <div class="photo-slider">
-                            <div class="photo" id="productsCarouselPhoto">
-                                <div class="photo-item">
-                                    <img src="assets/img/metUda.png">
-                                </div>
-                                <div class="photo-item">
-                                    <img src="assets/img/metUda.png">
-                                </div>
-                                <div class="photo-item">
-                                    <img src="assets/img/metUda.png">
-                                </div>
-                            </div>
+               <div class="slider" id="productsCarousel">
+                  <div class="item carousel-item">
+                     <div class="title">Ультразвуковой твердомер МЕТ-УДА</div>
+                     <div class="photo-slider">
+                        <div class="photo" id="productsCarouselPhoto">
+                           <div class="photo-item">
+                              <img src="assets/img/metUda.png">
+                           </div>
+                           <div class="photo-item">
+                              <img src="assets/img/metUda.png">
+                           </div>
+                           <div class="photo-item">
+                              <img src="assets/img/metUda.png">
+                           </div>
                         </div>
-                        <div class="footer-item">
-                            <div class="price-wrapp">
-                                <div class="price-title">В наличии</div>
-                                <div class="price">
-                                    <div class="old-price">85 200</div>
-                                    <div class="current-price">79 368</div>
-                                </div>
-                            </div>
-                            <div class="action-btn-wrapp">
-                                <div class="cart-btn"><img src="assets/img/Cart.svg"></div>
-                                <div class="move-btn"><a href="#"><img src="assets/img/move.svg"></a></div>
-                            </div>
+                     </div>
+                     <div class="footer-item">
+                        <div class="price-wrapp">
+                           <div class="price-title">В наличии</div>
+                           <div class="price">
+                              <div class="old-price">85 200</div>
+                              <div class="current-price">79 368</div>
+                           </div>
                         </div>
-                    </div>
-                    <div class="item carousel-item">
-                        <div class="title">Ультразвуковой твердомер МЕТ-УДА</div>
-                        <div class="photo-slider">
-                            <div class="photo" id="productsCarouselPhoto">
-                                <div class="photo-item">
-                                    <img src="assets/img/metUda.png">
-                                </div>
-                                <div class="photo-item">
-                                    <img src="assets/img/metUda.png">
-                                </div>
-                                <div class="photo-item">
-                                    <img src="assets/img/metUda.png">
-                                </div>
-                            </div>
+                        <div class="action-btn-wrapp">
+                           <div class="cart-btn"><img src="assets/img/Cart.svg"></div>
+                           <div class="move-btn"><a href="#"><img src="assets/img/move.svg"></a></div>
                         </div>
-                        <div class="footer-item">
-                            <div class="price-wrapp">
-                                <div class="price-title">В наличии</div>
-                                <div class="price">
-                                    <div class="old-price">85 200</div>
-                                    <div class="current-price">79 368</div>
-                                </div>
-                            </div>
-                            <div class="action-btn-wrapp">
-                                <div class="cart-btn"><img src="assets/img/Cart.svg"></div>
-                                <div class="move-btn"><a href="#"><img src="assets/img/move.svg"></a></div>
-                            </div>
+                     </div>
+                  </div>
+                  <div class="item carousel-item">
+                     <div class="title">Ультразвуковой твердомер МЕТ-УДА</div>
+                     <div class="photo-slider">
+                        <div class="photo" id="productsCarouselPhoto">
+                           <div class="photo-item">
+                              <img src="assets/img/metUda.png">
+                           </div>
+                           <div class="photo-item">
+                              <img src="assets/img/metUda.png">
+                           </div>
+                           <div class="photo-item">
+                              <img src="assets/img/metUda.png">
+                           </div>
                         </div>
-                    </div>
-                    <div class="item carousel-item">
-                        <div class="title">Ультразвуковой твердомер МЕТ-УДА</div>
-                        <div class="photo-slider">
-                            <div class="photo" id="productsCarouselPhoto">
-                                <div class="photo-item">
-                                    <img src="assets/img/metUda.png">
-                                </div>
-                                <div class="photo-item">
-                                    <img src="assets/img/metUda.png">
-                                </div>
-                                <div class="photo-item">
-                                    <img src="assets/img/metUda.png">
-                                </div>
-                            </div>
+                     </div>
+                     <div class="footer-item">
+                        <div class="price-wrapp">
+                           <div class="price-title">В наличии</div>
+                           <div class="price">
+                              <div class="old-price">85 200</div>
+                              <div class="current-price">79 368</div>
+                           </div>
                         </div>
-                        <div class="footer-item">
-                            <div class="price-wrapp">
-                                <div class="price-title">В наличии</div>
-                                <div class="price">
-                                    <div class="old-price">85 200</div>
-                                    <div class="current-price">79 368</div>
-                                </div>
-                            </div>
-                            <div class="action-btn-wrapp">
-                                <div class="cart-btn"><img src="assets/img/Cart.svg"></div>
-                                <div class="move-btn"><a href="#"><img src="assets/img/move.svg"></a></div>
-                            </div>
+                        <div class="action-btn-wrapp">
+                           <div class="cart-btn"><img src="assets/img/Cart.svg"></div>
+                           <div class="move-btn"><a href="#"><img src="assets/img/move.svg"></a></div>
                         </div>
-                    </div>
-                    <div class="item carousel-item">
-                        <div class="title">Ультразвуковой твердомер МЕТ-УДА</div>
-                        <div class="photo-slider">
-                            <div class="photo" id="productsCarouselPhoto">
-                                <div class="photo-item">
-                                    <img src="assets/img/metUda.png">
-                                </div>
-                                <div class="photo-item">
-                                    <img src="assets/img/metUda.png">
-                                </div>
-                                <div class="photo-item">
-                                    <img src="assets/img/metUda.png">
-                                </div>
-                            </div>
+                     </div>
+                  </div>
+                  <div class="item carousel-item">
+                     <div class="title">Ультразвуковой твердомер МЕТ-УДА</div>
+                     <div class="photo-slider">
+                        <div class="photo" id="productsCarouselPhoto">
+                           <div class="photo-item">
+                              <img src="assets/img/metUda.png">
+                           </div>
+                           <div class="photo-item">
+                              <img src="assets/img/metUda.png">
+                           </div>
+                           <div class="photo-item">
+                              <img src="assets/img/metUda.png">
+                           </div>
                         </div>
-                        <div class="footer-item">
-                            <div class="price-wrapp">
-                                <div class="price-title">В наличии</div>
-                                <div class="price">
-                                    <div class="old-price">85 200</div>
-                                    <div class="current-price">79 368</div>
-                                </div>
-                            </div>
-                            <div class="action-btn-wrapp">
-                                <div class="cart-btn"><img src="assets/img/Cart.svg"></div>
-                                <div class="move-btn"><a href="#"><img src="assets/img/move.svg"></a></div>
+                     </div>
+                     <div class="footer-item">
+                        <div class="price-wrapp">
+                           <div class="price-title">В наличии</div>
+                           <div class="price">
+                              <div class="old-price">85 200</div>
+                              <div class="current-price">79 368</div>
+                           </div>
+                        </div>
+                        <div class="action-btn-wrapp">
+                           <div class="cart-btn"><img src="assets/img/Cart.svg"></div>
+                           <div class="move-btn"><a href="#"><img src="assets/img/move.svg"></a></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item carousel-item">
+                     <div class="title">Ультразвуковой твердомер МЕТ-УДА</div>
+                     <div class="photo-slider">
+                        <div class="photo" id="productsCarouselPhoto">
+                           <div class="photo-item">
+                              <img src="assets/img/metUda.png">
+                           </div>
+                           <div class="photo-item">
+                              <img src="assets/img/metUda.png">
+                           </div>
+                           <div class="photo-item">
+                              <img src="assets/img/metUda.png">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="footer-item">
+                        <div class="price-wrapp">
+                           <div class="price-title">В наличии</div>
+                           <div class="price">
+                              <div class="old-price">85 200</div>
+                              <div class="current-price">79 368</div>
+                           </div>
+                        </div>
+                        <div class="action-btn-wrapp">
+                           <div class="cart-btn"><img src="assets/img/Cart.svg"></div>
+                           <div class="move-btn"><a href="#"><img src="assets/img/move.svg"></a></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Твёрдые аргументы -->
+      <div class="arguments-section" id="argumentsSection">
+        <div class="container-section-wrapp">
+            <div class="title-wrapp">
+                <div class="title">Твердые аргументы</div>
+            </div>
+            <div class="container-section">
+                <div class="up">
+                    <div class="item age-company"></div>
+                    <div class="item trust">
+                        <div class="title"></div>
+                        <div class="company-wrapp">
+                            <div class="item-company">
+                                <svg class="icon-box" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <use xlink:href="assets/img/logo-company.svg#rzd"></use>
+                                </svg>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="down"></div>
             </div>
         </div>
-    </div>
-    <!-- Твёрдые аргументы -->
-
-    <!-- Наше производство -->
-    
-    <!-- Инфоцентр -->
-    <div class="white-container-wrapp">
-        <div class="white-container info-center">
+      </div>
+      <!-- Наше производство -->
+      <div class="our-production-section" id="ourProductionSection"></div>
+      <!-- Инфоцентр -->
+      <div class="white-container-wrapp" id="infoCenter">
+         <div class="white-container info-center">
             <div class="title-wrapp">
-                <div class="title">Инфоцентр</div>
+               <div class="title">Инфоцентр</div>
             </div>
             <div class="carousel-wrapp">
-                <div class="slider" id="sliderNews">
-                    <div class="item-wrapp">
-                        <div class="item">
-                            <div class="img">
-                                <img src="assets/img/news1.png">
-                            </div>
-                            <div class="text-wrapp">
-                                <div class="title-wrapp">
-                                    <div class="title">Новости</div>
-                                    <div class="description">Меры твердости поставляются теперь в фирменных металлических футлярах</div>
-                                </div>
-                                <div class="footer-item">
-                                    <div class="data">12 марта 2023 </div>
-                                    <div class="link-move">
-                                        <img src="assets/img/arrowMove.svg">
-                                    </div>
-                                </div>
-                            </div>
+               <div class="slider" id="sliderNews">
+                  <div class="item-wrapp">
+                     <div class="item">
+                        <div class="img">
+                           <img src="assets/img/news1.png">
                         </div>
-                    </div>
-                    <div class="item-wrapp">
-                        <div class="item">
-                            <div class="img">
-                                <img src="assets/img/news2.png">
-                            </div>
-                            <div class="text-wrapp">
-                                <div class="title-wrapp">
-                                    <div class="title">Новости</div>
-                                    <div class="description">МЕТ-HV50 признан лауреатом выставки NDT-2023</div>
-                                </div>
-                                <div class="footer-item">
-                                    <div class="data">15 марта 2023</div>
-                                    <div class="link-move">
-                                        <img src="assets/img/arrowMove.svg">
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="text-wrapp">
+                           <div class="title-wrapp">
+                              <div class="title">Новости</div>
+                              <div class="description">Меры твердости поставляются теперь в фирменных металлических футлярах</div>
+                           </div>
+                           <div class="footer-item">
+                              <div class="data">12 марта 2023 </div>
+                              <a href="" class="link-move">
+                              <img src="assets/img/arrowMove.svg">
+                              </a>
+                           </div>
                         </div>
-                    </div>
-                    <div class="item-wrapp">
-                        <div class="item">
-                            <div class="img">
-                                <img src="assets/img/news3.png">
-                            </div>
-                            <div class="text-wrapp">
-                                <div class="title-wrapp">
-                                    <div class="title">Акции и скидки</div>
-                                    <div class="description">Внимание, АКЦИЯ! Твердомер МЕТ-УД теперь дешевле на 15%</div>
-                                </div>
-                                <div class="footer-item">
-                                    <div class="data">19 марта 2023</div>
-                                    <div class="link-move">
-                                        <img src="assets/img/arrowMove.svg">
-                                    </div>
-                                </div>
-                            </div>
+                     </div>
+                  </div>
+                  <div class="item-wrapp">
+                     <div class="item">
+                        <div class="img">
+                           <img src="assets/img/news2.png">
                         </div>
-                    </div>
-                    <div class="item-wrapp">
-                        <div class="item">
-                            <div class="img">
-                                <img src="assets/img/news1.png">
-                            </div>
-                            <div class="text-wrapp">
-                                <div class="title-wrapp">
-                                    <div class="title">Что-то</div>
-                                    <div class="description">Здесь какой то текст, можете не читать</div>
-                                </div>
-                                <div class="footer-item">
-                                    <div class="data">3 октябра 2023</div>
-                                    <div class="link-move">
-                                        <img src="assets/img/arrowMove.svg">
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="text-wrapp">
+                           <div class="title-wrapp">
+                              <div class="title">Новости</div>
+                              <div class="description">МЕТ-HV50 признан лауреатом выставки NDT-2023</div>
+                           </div>
+                           <div class="footer-item">
+                              <div class="data">15 марта 2023</div>
+                              <a href="" class="link-move">
+                              <img src="assets/img/arrowMove.svg">
+                              </a>
+                           </div>
                         </div>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+                  <div class="item-wrapp">
+                     <div class="item">
+                        <div class="img">
+                           <img src="assets/img/news3.png">
+                        </div>
+                        <div class="text-wrapp">
+                           <div class="title-wrapp">
+                              <div class="title">Акции и скидки</div>
+                              <div class="description">Внимание, АКЦИЯ! Твердомер МЕТ-УД теперь дешевле на 15%</div>
+                           </div>
+                           <div class="footer-item">
+                              <div class="data">19 марта 2023</div>
+                              <a href="" class="link-move">
+                              <img src="assets/img/arrowMove.svg">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item-wrapp">
+                     <div class="item">
+                        <div class="img">
+                           <img src="assets/img/news1.png">
+                        </div>
+                        <div class="text-wrapp">
+                           <div class="title-wrapp">
+                              <div class="title">Что-то</div>
+                              <div class="description">Здесь какой то текст, можете не читать</div>
+                           </div>
+                           <div class="footer-item">
+                              <div class="data">3 октябра 2023</div>
+                              <a href="" class="link-move">
+                              <img src="assets/img/arrowMove.svg">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
             <div class="link-more-wrapp">
-                <a href="" class="link-more">все публикации</a>
+               <a href="" class="link-more">все публикации</a>
             </div>
-        </div>
-    </div>
-    <!-- Футер -->
-</body>
-<script type="text/javascript" src="assets/script/slick/slick.min.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/carousel.js"></script>
+         </div>
+      </div>
+      <!-- Футер -->
+      <div class="footer">
+         <div class="container-section-wrapp">
+            <div class="logo">
+               <a href="">
+               <img src="assets/img/logo.svg">
+               </a>
+            </div>
+            <div class="data-section-wrapp">
+               <div class="nav-wrapp">
+                  <div class="left-content item">
+                     <div class="title">Продукция</div>
+                     <ul class="links">
+                        <li class="link">
+                           <a href="">Портативные твердомеры</a>
+                        </li>
+                        <li class="link">
+                           <a href="">Миниатюрные твердомеры</a>
+                        </li>
+                        <li class="link">
+                           <a href="">Эталонные меры твердости</a>
+                        </li>
+                        <li class="link">
+                           <a href="">Эталонные меры микротвердости</a>
+                        </li>
+                        <li class="link">
+                           <a href="">Подбор твердомера</a>
+                        </li>
+                        <li class="link">
+                           <a href="">Выбор мер твердости</a>
+                        </li>
+                        <li class="link">
+                           <a href="">Техническая поддержка</a>
+                        </li>
+                        <li class="link">
+                           <a href="">Часто задаваемые вопросы</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="right-content item">
+                     <div>
+                        <div class="title">Компания</div>
+                        <ul class="links">
+                           <li class="link">
+                              <a href="">О компании</a>
+                           </li>
+                           <li class="link">
+                              <a href="">Музей твердометрии</a>
+                           </li>
+                           <li class="link">
+                              <a href="">Сертификация</a>
+                           </li>
+                           <li class="link">
+                              <a href="">Отзывы</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="active-links">
+                        <a href="" class="acitve-link">Дилеры</a>
+                        <a href="" class="acitve-link">Инфоцентр</a>
+                        <a href="" class="acitve-link">Проверка подлинности</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="data-company-wrapp">
+                  <div class="data-contact">
+                     <a href="" class="phone-number">
+                     8 (800) 222-75-26
+                     </a>
+                     <a href="" class="call item-contact">
+                     <img src="assets/img/Phone.svg">
+                     <span>Заказать звонок</span>
+                     </a>
+                     <a href="" class="mail item-contact">
+                     <img src="assets/img/email.svg">
+                     <span>info@tverdomer.ru</span>
+                     </a>
+                  </div>
+                  <div class="data-address">
+                     <div class="title">Офис и производство</div>
+                     <div class="description">124498, г. Москва, Зеленоград, 4922-й проезд, д. 4с4, Технопарк «ЭЛМА».</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="copyright-wrapp">
+            <div class="copyright">COPYRIGHT © 1991-2023 ООО «ЦЕНТР МЕТ» Все права защищены</div>
+            <a class="privacy-policy">Политика конфиденциальности</a>
+         </div>
+      </div>
+   </body>
+   <script type="text/javascript" src="assets/script/slick/slick.min.js"></script>
+   <script src="assets/js/main.js"></script>
+   <script src="assets/js/scroll.js"></script>
+   <script src="assets/js/carousel.js"></script>
 </html>

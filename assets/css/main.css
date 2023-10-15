@@ -12,6 +12,10 @@
     --slider-bg-color: #F5F5F5;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: var(--bg-fill);
     color: var(--text-color);
@@ -364,6 +368,62 @@ header .user-action div:hover, header .user-action a:hover{
     margin-top: 72px;
     margin-left: 80px;
     max-width: calc(100% - 160px - 72px);
+    position: relative; 
+}
+
+.prewie-block-wrap .progress-section{
+    position: absolute;
+    left: 0;
+    width: max-content;
+    top: 0;
+    display: flex;
+    height: 100%;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.prewie-block-wrap .progress-section .progress-bar{
+    position: fixed;
+}
+
+.prewie-block-wrap .progress-section .progress-bar{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    font-size: 13px;
+    margin-top: 32px;
+    font-weight: 500;
+    z-index: 999;
+}
+
+.prewie-block-wrap .progress-section .progress-bar .progress-bar-item{
+    letter-spacing: .2em;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.prewie-block-wrap .progress-section .progress-bar .progress-bar-item.isActive{
+    color: var(--red-color);
+}
+
+.prewie-block-wrap .progress-section .image{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.prewie-block-wrap .progress-section .image .name{
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-color);
+    letter-spacing: .2em;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
 }
 
 .prewie-block-wrap .header-wrapp{
@@ -1228,6 +1288,196 @@ header .user-action div:hover, header .user-action a:hover{
 .white-container.info-center .title-wrapp{
     margin-bottom: 80px;
 }
+
+.footer .container-section-wrapp{
+    margin: 0 auto;
+    padding: 80px 0;
+    max-width: 1314px;
+}
+
+.footer{
+    position: relative;
+    background: #0F1214;
+}
+
+.footer .copyright-wrapp{
+    max-width: 1314px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 80px;
+    color: var(--title-gray);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.footer .copyright-wrapp .privacy-policy{
+    color: var(--title-gray) !important;
+}
+
+.footer::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #1B1C1C;
+    bottom: 80px;
+    left: 0;
+}
+
+.footer .container-section-wrapp{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer .container-section-wrapp .logo{
+    width: 73px;
+}
+
+.footer .container-section-wrapp .logo img{
+    width: 100%;
+}
+
+.footer .container-section-wrapp .data-section-wrapp{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer .container-section-wrapp .data-section-wrapp .data-company-wrapp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.footer .container-section-wrapp .data-section-wrapp .data-company-wrapp .data-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer .container-section-wrapp .data-section-wrapp .data-company-wrapp .data-address .description{
+    width: 272px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--title-gray);
+}
+
+.footer .container-section-wrapp .data-section-wrapp .nav-wrapp{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.footer .container-section-wrapp .data-section-wrapp .nav-wrapp .item{
+    display: flex;
+    flex-direction: column;
+    gap: 32px
+}
+
+.footer .container-section-wrapp .data-section-wrapp .nav-wrapp .item .title{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-color-active);
+}
+
+.footer .container-section-wrapp .data-section-wrapp .nav-wrapp .item ul{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer .container-section-wrapp .data-section-wrapp .nav-wrapp .right-content div {
+    display: flex;
+    flex-direction: column;
+    gap: 32px
+}
+
+.footer .container-section-wrapp .data-section-wrapp .nav-wrapp .item ul .link a{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--title-gray);
+}
+
+.footer .container-section-wrapp .data-section-wrapp .nav-wrapp .right-content .active-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 0;
+}
+
+.footer .container-section-wrapp .data-section-wrapp .nav-wrapp .right-content .active-links a{
+    color: var(--text-color-active);
+}
+
+.footer .container-section-wrapp .data-section-wrapp .item-contact{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--text-color-active);
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #2B3032;
+}
+
+.footer .container-section-wrapp .data-section-wrapp .data-company-wrapp .item-contact img{
+    width: 32px;
+    height: 32px;
+}
+
+.footer .container-section-wrapp .data-section-wrapp .data-company-wrapp .phone-number{
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--text-color-active);
+}
+
+.footer .container-section-wrapp .data-section-wrapp .data-company-wrapp .data-address {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
+.footer .container-section-wrapp .data-section-wrapp .data-company-wrapp .data-address .title{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-color-active);
+}
+
+.arguments-section .container-section-wrapp .title-wrapp{
+    max-width: 1314px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--text-color-active);
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.arguments-section .container-section-wrapp .container-section{
+    background: none;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.arguments-section .container-section-wrapp .container-section .up{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.arguments-section .container-section-wrapp .container-section .up .item{
+    width: 50%;
+    background: var(--section-gray);
+    padding: 72px 88px;
+    border-radius: 28px;
+}
+
 /* Подключение шрифтов */
 
 @font-face {
