@@ -1474,8 +1474,74 @@ header .user-action div:hover, header .user-action a:hover{
 .arguments-section .container-section-wrapp .container-section .up .item{
     width: 50%;
     background: var(--section-gray);
-    padding: 72px 88px;
+    justify-content: center;
+    padding: 72px 0;
     border-radius: 28px;
+}
+
+.arguments-section .container-section-wrapp .container-section .up .item.trust .company-wrapp{
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.arguments-section .container-section-wrapp .container-section .up .item.trust .company-wrapp .item-company{
+    max-width: 165px;
+    height: auto;
+    position: relative;
+}
+
+.arguments-section .container-section-wrapp .container-section .up .item.trust .company-wrapp .item-company::before{
+    content: "";
+    position: absolute;
+    right: 14px;
+    height: 35px;
+    top: calc(50% - 17.5px);
+    width: 1px;
+    background: var(--divider-section);
+}
+
+.arguments-section .container-section-wrapp .container-section .up .item.trust .company-wrapp .item-company:nth-child(3n)::before{
+    content: none
+}
+
+.arguments-section .container-section-wrapp .container-section .up .item.trust .company-wrapp .item-company img{
+    width: 100%;
+    height: auto;
+}
+
+.arguments-section .container-section-wrapp .container-section .up .item.trust .title{
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--text-color-active);
+    margin-bottom: 58px;
+    text-align: center;
+}
+
+.arguments-section .container-section-wrapp .container-section .up .item.trust .link-move-wrapp{
+    margin-top: 47px;
+    display: flex;
+    justify-content: center;
+}
+
+.arguments-section .container-section-wrapp .container-section .up .item.trust .link-move{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding-bottom: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.arguments-section .container-section-wrapp .container-section .up .item.trust .link-move::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: var(--text-color);
 }
 
 /* Подключение шрифтов */
