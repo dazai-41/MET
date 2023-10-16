@@ -10,14 +10,74 @@ $(document).ready(function(){
         },
         arrows:false,
         infinite: false,
+        responsive: [
+            {
+                breakboint: 1280,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakboint: 390,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+
+                }
+            }
+        ]
     })
 
     $(productsCarousel).slick({
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         infinite: false,
         dots: false,
         arrows:true,
+        responsive: [
+            {
+                breakboint: 1280,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakboint: 390,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+
+                }
+            }
+        ]
+    })
+
+    $(ourProductionSlider).slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: false,
+        ariableWidth: true,
+        arrows:true,
+        responsive: [
+            {
+                breakboint: 1280,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakboint: 390,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+
+                }
+            }
+        ]
     })
 
     $(sliderNews).slick({
@@ -26,5 +86,22 @@ $(document).ready(function(){
         infinite: false,
         dots: false,
         arrows:true,
+        responsive: [
+            {
+                breakboint: 1280,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakboint: 390,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+
+                }
+            }
+        ]
     })
 });
