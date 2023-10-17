@@ -1849,7 +1849,7 @@ header .user-action div:hover, header .user-action a:hover{
 
 /* Адаптив */
 
-@media(max-width: 390px) {
+@media(max-width: 420px) {
     .prewie-block-wrap .progress-section{
         display: none;
     }
@@ -2074,6 +2074,7 @@ header .user-action div:hover, header .user-action a:hover{
         height: max-content;
         flex-direction: column-reverse;
         align-items: center;
+        padding: 32px 0;
     }
 
     .container-section-wrapp .container-section .title{
@@ -2082,8 +2083,32 @@ header .user-action div:hover, header .user-action a:hover{
 
     .container-section-wrapp .container-section:first-child .left-content{
         margin: 0;
-        max-width: 310px;
+        width: calc(100% - 32px);
         gap: 40px;
+        position: relative;
+    }
+
+    .container-section-wrapp .container-section:first-child .left-content::before{
+        bottom: -7px;
+        left: 0;
+        background: var(--section-gray);
+        content: "";
+        position: absolute;
+        filter: blur(4px);
+        width: 100%;
+        height: 15px;
+    }
+
+    .arguments-section .container-section-wrapp .container-section .up .item{
+        width: 100%;
+        padding: 32px 0;
+
+    }
+
+    .arguments-section .container-section-wrapp .container-section .up .age-company{
+        padding-left: 16px;
+        padding-right: 16px;
+        width: calc(100% - 32px);
     }
 
     .container-section-wrapp .container-section:first-child .left-content .description .table .item{
@@ -2095,14 +2120,25 @@ header .user-action div:hover, header .user-action a:hover{
     }
 
     .container-section-wrapp:nth-child(1) .container-section .right-content{
-        max-width: 334px;
+        max-width: 100%;
         
     }
 
     .container-section-wrapp:nth-child(1) .container-section .right-content img{
         width: 100%;
-        position: relative;
-        right: -12px;
+    }
+
+    .container-section-wrapp .tripple-section .right-item-wrapp .item{
+        padding: 40px 0;
+    }
+
+    .container-section-wrapp .tripple-section .right-item-wrapp .item-description .right-content{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-section-wrapp .tripple-section .right-item-wrapp .item-description .right-content img{
+        max-width: 242px;
     }
 
     .container-section-wrapp .container-section:first-child .left-content .description{
@@ -2118,6 +2154,249 @@ header .user-action div:hover, header .user-action a:hover{
         font-size: 12px;
     }
 
+    .container-section-wrapp:nth-child(3) .container-section{
+        flex-direction: column;
+        gap: 30px;
+        padding: 32px 0;
+        padding-bottom: 43px;
+    }
+
+    .container-section-wrapp:nth-child(3) .container-section .right-content{
+        gap: 32px;
+        width: calc(100% - 48px);
+        margin: 0 24px;
+    }
+
+    .container-section-wrapp:nth-child(3) .container-section .right-content .down{
+        font-size: 12px;
+    }
+
+    .container-section-wrapp .tripple-section .right-item-wrapp .item-garant .link{
+        margin-top: 0;
+        margin-right: 24px;
+    }
+
+    .container-section-wrapp .tripple-section .right-item-wrapp .item-garant .link a{
+        font-size: 12px;
+    }
+
+    .container-section-wrapp .tripple-section .right-item-wrapp .item-garant .title{
+        justify-content: start;
+        margin-bottom: 0;
+        margin-left: 36px;
+    }
+
+    .container-section-wrapp .tripple-section .right-item-wrapp .item-garant .title span{
+        font-size: 100px;
+    }
+
+    .container-section-wrapp .tripple-section .right-item-wrapp .item-garant .title .description{
+        font-size: 24px;
+    }
+
+    .container-section-wrapp .tripple-section .item-title{
+        padding-top: 48px;
+    }
+
+    .container-section-wrapp:nth-child(2) .container-section .content{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .container-section-wrapp .tripple-section{
+        flex-direction: column;
+        width: calc(100% - 32px);
+        margin: 0 16px;
+    }
+
+    .arguments-section .container-section-wrapp .container-section{
+        flex-direction: column;
+    }
+
+    .arguments-section .container-section-wrapp .container-section .down .contacts-wrapp{
+        flex-direction: column;
+    }
+
+    .arguments-section .container-section-wrapp .container-section{
+        align-items: start;
+    }
+
+    .footer .container-section-wrapp{
+        flex-direction: column;
+        padding: 40px 0 ;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .footer .container-section-wrapp .data-section-wrapp .data-company-wrapp .data-contact{
+        margin-top: 32px;   
+        margin-bottom: 48px;
+    }
+
+    .footer .container-section-wrapp .data-section-wrapp{
+        flex-direction: column-reverse;
+    }
+
+    .footer .container-section-wrapp .data-section-wrapp .data-company-wrapp .phone-number{
+        margin-bottom: 8px;
+        font-size: 20px;
+    }
+
+    .footer .container-section-wrapp .data-section-wrapp .nav-wrapp .item{
+        gap: 24px;
+    }
+
+    .footer .container-section-wrapp .data-section-wrapp .data-company-wrapp .data-address .title{
+        font-size: 12px;
+    }
+
+    .footer .container-section-wrapp .data-section-wrapp .data-company-wrapp .data-address .description{
+        width: auto;
+        max-width: 340px;
+        font-size: 11px;
+    }
+
+    .footer .container-section-wrapp .data-section-wrapp .nav-wrapp .item ul{
+        gap: 18px;
+    }
+
+    .footer .copyright-wrapp{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 16px;
+        padding: 32px 16px;
+        height: max-content;
+        font-size: 11px;
+    }
+
+    .footer .copyright-wrapp::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: #1B1C1C;
+        top: 0;
+        left: 0;
+    }
+
+    .footer::before{
+        content: none   ;
+    }
+
+    .footer .container-section-wrapp .logo{
+        width: 60px;
+    }
+
+    .footer .container-section-wrapp .data-section-wrapp .nav-wrapp{
+        justify-content: start;
+        gap: 42px;
+        margin-top: 48px;
+    }
+
+    .footer .container-section-wrapp .data-section-wrapp .nav-wrapp .item ul .link a{
+        font-size: 11px;    
+    }
+
+    .footer .container-section-wrapp .data-section-wrapp .nav-wrapp .right-content div{
+        gap: 24px;
+    }
+
+    .footer .container-section-wrapp .data-section-wrapp .nav-wrapp .right-content .active-links a{
+        font-size: 12px;
+    }
+
+    .footer .container-section-wrapp .data-section-wrapp .nav-wrapp .item .title{
+        font-size: 12px;
+    }
+
+    .footer .container-section-wrapp .data-section-wrapp .item-contact{
+        max-width: calc(100% - 32px);
+        font: 14px;
+    }
+
+    .arguments-section .container-section-wrapp .container-section .up .age-company .links-wrapp .up{
+        gap: 16px;
+    }
+
+    .arguments-section .container-section-wrapp .container-section .up{
+        flex-direction: column;
+    }
+
+    .container-section-wrapp .tripple-section .right-item-wrapp .item-description{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    .container-section-wrapp .tripple-section .item-title .up{
+        max-width: calc(100% - 48px);
+        padding: 0 24px;
+    }
+
+    .container-section-wrapp .tripple-section .item-title .down{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-section-wrapp .tripple-section .item-title .down img{
+        max-width: 305px;
+    }
+
+    .container-section-wrapp .tripple-section .right-item-wrapp .item-description .left-content{
+        width: calc(100% - 48px);
+        padding-left: 0;
+        padding: 0 24px;    
+        font-size: 14px;
+    }
+
+    .container-section-wrapp:nth-child(3) .container-section .right-content .up{
+        gap: 24px;
+    }
+
+    .container-section-wrapp .tripple-section .item-title .title{
+        font-size: 20px;
+    }
+
+    .container-section-wrapp .tripple-section .item-title .up .description{
+        font-size: 12px;
+    }
+
+    .container-section-wrapp .tripple-section .item-description .right-content img{
+        position: static;
+    }
+
+    .arguments-section .container-section-wrapp .container-section .up .item.trust .company-wrapp .item-company:nth-child(1n)::before{
+        content: "";
+        position: absolute;
+        right: -14px;
+        height: 35px;
+        top: calc(50% - 17.5px);
+        width: 1px;
+        background: var(--divider-section);
+    }
+
+    .arguments-section .container-section-wrapp .container-section .up .item.trust .company-wrapp .item-company:last-child::before{
+        content: none;
+    }
+
+    .arguments-section .container-section-wrapp .container-section .up .item.trust .title{
+        font-size: 18px;
+        margin-bottom: 22px;
+    }
+
+    .arguments-section .container-section-wrapp .title-wrapp, .our-production-section .container-section-wrapp .title-wrapp{
+        font-size: 20px;
+        margin-bottom: 35px
+    }
+
+    .arguments-section .container-section-wrapp .container-section .up .age-company .text-wrapp .title-wrapp .primary-title{
+        font-size: 100px;
+    }
+
+    .arguments-section .container-section-wrapp .container-section .up .age-company .text-wrapp .title-wrapp .secondary-title{
+        font-size: 20px;
+    }
 }
 
 /* Подключение шрифтов */

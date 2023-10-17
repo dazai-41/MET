@@ -19,7 +19,7 @@ $(document).ready(function(){
                 }
             },
             {
-                breakboint: 390,
+                breakboint: 420,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
