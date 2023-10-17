@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" >
       <title>MET</title>
       <link rel="stylesheet" href="assets/css/main.css">
       <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -109,9 +109,67 @@
                   <div class="menu-burger__header">
                       <span></span>
                   </div>
-                  <nav class="burger-menu">
-
-                  </nav>
+                  <div class="burger-menu-wrapp">
+                     <nav class="burger-menu">
+                        <div class="user-action-wrapp">
+                           <div class="search-input-wrapp">
+                              <input type="text" placeholder="Поиск">
+                              <img src="assets/img/Search.svg">
+                           </div>
+                           <div class="user-action">
+                              <a href="" class="profile-btn">
+                                 <img src="assets/img/User.svg">
+                                 <span>Личный кабинет</span>
+                              </a>
+                              <div class="language">
+                                 <img src="assets/img/Web.svg">
+                                 <span>ENG</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="nav-menu-wrapp">
+                           <ul class="nav-menu">
+                             <li class="nav-menu-item"><a href="">компания</a></li>
+                             <li class="nav-menu-item">
+                              <div class="title-wrapp accordion-btn">
+                                 <span>продукция</span>
+                                 <img src="assets/img/arrow-white.svg"></div>
+                                 <div class="accordion-body">
+                                    <ul>
+                                       <li class="nav-menu-item-list"><a href=""><a href="">Твердомеры</a></a></li>
+                                       <li class="nav-menu-item-list"><a href=""><a href="">Меры твердости</a></a></li>
+                                       <li class="nav-menu-item-list"><a href=""><a href="">Подобрать твердомер</a></a></li>
+                                       <li class="nav-menu-item-list"><a href=""><a href="">Подобрать меры твердости</a></a></li>
+                                    </ul>
+                                 </div>
+                             </li>
+                             <li class="nav-menu-item"><a href="">Дилеры</a></li>
+                             <li class="nav-menu-item"><a href="">инфоцентр</a></li>
+                             <li class="nav-menu-item"><a href="">проверка подлинности</a></li>
+                             <li class="nav-menu-item"><a href="">контакты</a></li> 
+                           </ul>
+                        </div>
+                        <div class="contacts-links-wrapp">
+                           <div class="contacts-links">
+                              <a href="">8 (800) 222-75-26</a>
+                              <div class="contact-btns-wrapp">
+                                 <a href="" class="contact-btn-wrapp">
+                                    <img src="assets//img/Telegram.svg">
+                                 </a>
+                                 <a href="" class="contact-btn-wrapp">
+                                    <img src="assets/img/Whatsapp.svg">
+                                 </a>
+                                 <a href="" class="contact-btn-wrapp">
+                                    <img src="assets/img/message.svg">
+                                 </a>
+                                 <a href="" class="contact-btn-wrapp">
+                                    <img src="assets/img/sms.svg">
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </nav>
+                  </div>
             </div>
          </div>
       </header>
@@ -217,14 +275,14 @@
                      </div>
                      <a href="" class="link-move">Купить</a>
                   </div>
-                  <!-- Стрелки карусели для мобилки -->
-                  <div class="arrows-slider">
-                     <div class="arrow hardness-testers">
-                        <span>Твердомеры</span>
-                     </div>
-                     <div class="arrow hardness-measures">
-                        <span>Меры твердости</span>
-                     </div>
+               </div>
+               <!-- Стрелки карусели для мобилки -->
+               <div class="arrows-slider-mobile">
+                  <div class="arrow hardness-testers isActive">
+                     <span>Твердомеры</span>
+                  </div>
+                  <div class="arrow hardness-measures">
+                     <span>Меры твердости</span>
                   </div>
                </div>
             </div>
@@ -325,7 +383,7 @@
                      </div>
                   </div>
                   <div class="down">
-                     <a href="#">Выбрать товары</a>
+                     <a href="#">Выбрать товар</a>
                   </div>
                </div>
             </div>
@@ -509,6 +567,11 @@
                   </div>
                </div>
             </div>
+            <div class="mobile-go-catalog-wrapp">
+               <a href="#" class="mobile-go-catalog">
+                  <span>В каталог</span>
+                  </a>
+            </div>
          </div>
       </div>
       <!-- Твёрдые аргументы -->
@@ -571,6 +634,15 @@
                             </div>
                             <div class="item-company">
                               <img src="assets/img/logo-company/VMZ.svg">
+                            </div>
+                            <div class="item-company">
+                              <img src="assets/img/logo-company/gaz.svg">
+                            </div>
+                            <div class="item-company">
+                              <img src="assets/img/logo-company/baltika.svg">
+                            </div>
+                            <div class="item-company">
+                              <img src="assets/img/logo-company/baikal.svg">
                             </div>
                             <div class="item-company">
                               <img src="assets/img/logo-company/volkswagen.svg">
