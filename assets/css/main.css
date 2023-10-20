@@ -1172,7 +1172,7 @@ header .user-action div:hover, header .user-action a:hover{
     width: 418px;
 }
 
-.white-container .slider .item:not(.photo){
+.white-container .slider .item-wrapp:not(.photo){
     margin: 0 15px;
 }
 
@@ -1291,7 +1291,6 @@ header .user-action div:hover, header .user-action a:hover{
     background: var(--slider-bg-color);
     border-radius: 28px;
     width: 418px;
-    margin: 15px;
 } 
 
 .white-container.info-center .slider .item-wrapp .item{
