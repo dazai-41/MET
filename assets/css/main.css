@@ -1176,6 +1176,10 @@ header .user-action div:hover, header .user-action a:hover{
     margin: 0 15px;
 }
 
+.white-container.our-products .slider .item:not(.photo){
+    margin: 0 15px;
+}
+
 .slider .slick-list:not(.photo){
     margin-left: -15px;
     margin-right: -15px;
