@@ -1291,6 +1291,7 @@ header .user-action div:hover, header .user-action a:hover{
     background: var(--slider-bg-color);
     border-radius: 28px;
     width: 418px;
+    margin: 15px;
 } 
 
 .white-container.info-center .slider .item-wrapp .item{
