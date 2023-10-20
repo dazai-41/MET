@@ -2407,7 +2407,7 @@ header .user-action div:hover, header .user-action a:hover{
     }
 
     .mobile-go-catalog-wrapp{
-        display: flex;
+        display: flex !important;
         justify-content: end;
     }
 
