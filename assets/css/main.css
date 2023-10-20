@@ -1077,7 +1077,7 @@ header .user-action div:hover, header .user-action a:hover{
     width: 100%;
 }
 
-.mobile-go-catalog-wrapp{
+.white-container.our-products .mobile-go-catalog-wrapp{
     display:none;   
 }
 
