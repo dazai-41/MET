@@ -111,18 +111,18 @@ header .header-container nav ul li{
 
 header .header-container nav ul li a{
     position: relative;
+    z-index: 3;
 }
 
 header .header-container .pop-up-links{
     position: absolute;
     left: -30px;
-    top: calc(73px + 24px);
+    top: 0;
+    padding-top: calc(73px + 24px);
     pointer-events: none;
     opacity: 0;
     transition: .2s ease-in-out;
-    width: 100%;
-    transition-delay: .2s;
-    z-index: 22;
+    z-index: 2;
 }
 
 header .header-container nav ul li:hover .pop-up-links{ 
@@ -130,15 +130,22 @@ header .header-container nav ul li:hover .pop-up-links{
     pointer-events: all;
 }
 
-header .header-container li .pop-up-links::before{
+header .header-container nav ul li:hover::before{
+    opacity: 1;
+}
+
+header .header-container li::before{
     content: " ";
     position: absolute;
-    bottom: 100%;
-    left: calc(50% + 30px);
+    bottom: -24px;
+    left: 50%;
     margin-left: -14px;
     border-width: 14px;
+    opacity: 0;
     border-style: solid;
     border-color: transparent transparent var(--light-gray) transparent;
+    transition: .2s ease-in-out;
+    z-index: 1;
 }
 
 .nav-header li a::after{
@@ -835,12 +842,16 @@ header .user-action div:hover, header .user-action a:hover{
     transition: .2s ease-in-out;
 }
 
-.container-section-wrapp:nth-child(3) .container-section .right-content .down:hover a{
-    color: var(--red-color);
+.link-move:hover{
+    color: var(--red-color) !important;
 }
 
-.container-section-wrapp:nth-child(3) .container-section .right-content .down:hover::before{
-    background: var(--red-color);
+.link-move:hover a{
+    color: var(--red-color) !important;
+}
+
+.link-move:hover::before{
+    background: var(--red-color) !important;
 }
 
 .container-section-wrapp .tripple-section{
@@ -963,6 +974,7 @@ header .user-action div:hover, header .user-action a:hover{
     font-weight: 500;
     color: var(--text-color);
     position: relative;
+    padding-bottom: 10px;
     text-transform: uppercase;
 }
 
@@ -971,9 +983,13 @@ header .user-action div:hover, header .user-action a:hover{
     width: 100%;
     height: 2px;
     position: absolute;
-    bottom: -10px;
+    bottom: 0;
     left: 0;
     background: var(--text-color);
+}
+
+.link-move::before{
+    transition: .2s ease-in-out;
 }
 
 .white-container-wrapp{
@@ -1598,6 +1614,7 @@ header .user-action div:hover, header .user-action a:hover{
     padding-bottom: 10px;
     position: relative;
     text-align: center;
+    transition-delay: 0;
 }
 
 .arguments-section .container-section-wrapp .container-section .up .item.trust .link-move::before{

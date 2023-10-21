@@ -1,4 +1,5 @@
 jQuery(function($){
+    // Открытие поиска в header
     $('.search-btn-wrapp .search-btn').click(function(){
         $(this).parent().addClass('isActive');
     });
@@ -10,8 +11,10 @@ jQuery(function($){
 		}
 	});
 
+    // Слайдер в превью секции для ПК
+
     $(document).ready(function(){
-        if($(window).width() >= 1440){
+        if($(window).width() >= 1280){
             var carouselItemHardnessTesters = $('.prewie-block-wrap .prewie-block .content-wrapp .content .item.hardness-testers'),
                 carousel = $('.prewie-block-wrap .prewie-block .content-wrapp .content'),
                 carouselItemHardnessMeasures = $('.prewie-block-wrap .prewie-block .content-wrapp .content .item.hardness-measures'),
@@ -39,6 +42,8 @@ jQuery(function($){
         }
     })
     
+    // Слайдер в превью секции для мобилки
+
     $(document).ready(function(){
         if($(window).width() <= 420){
             var carouselItemHardnessTesters = $('.prewie-block-wrap .prewie-block .content-wrapp .content .item.hardness-testers'),
@@ -69,6 +74,8 @@ jQuery(function($){
     })
 });
 
+// Смена блоков при адаптации на мобилку
+
 $(document).ready(function(){
     if($(window).width() <= 420){
         var img = $('.about-us .container-section-wrapp').eq(1).find('.img'),
@@ -77,6 +84,8 @@ $(document).ready(function(){
     }
 })
 
+// Бургер меню на мобилке
+
 $(document).ready(function() {
     $('.menu-burger__header').click(function() {
         $('.menu-burger__header').toggleClass('isActive');
@@ -84,6 +93,8 @@ $(document).ready(function() {
         $('html').toggleClass('isActive');
     });
 });
+
+// Аккордион в меню на мобилке
 
 $(document).ready(function() {
     $('.accordion-btn').click(function() {
