@@ -18,7 +18,6 @@ html{
 
 html.isActive{
     overflow: hidden;
-    pointer-events: none;
 }
 
 body{
@@ -388,6 +387,32 @@ header .user-action div:hover, header .user-action a:hover{
     position: relative; 
 }
 
+.progress-section .image{
+    cursor: default;
+}
+
+.progress-section .image .img{
+    width: 21px;
+    height: 30px;
+    outline: 4px solid var(--text-color);
+    outline-offset:-4px;
+    border-radius: 50px;
+}
+
+.progress-section .image:hover .img .circle{
+    top: 7px;
+}
+
+.progress-section .image .img .circle{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    left: 7px;
+    position: relative;
+    top: 16px;
+    background: var(--text-color);
+}
+
 .prewie-block-wrap .progress-section{
     position: absolute;
     left: 0;
@@ -432,6 +457,7 @@ header .user-action div:hover, header .user-action a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: end;
+    gap: 15px;
 }
 
 .prewie-block-wrap .progress-section .image .name{
@@ -645,7 +671,7 @@ header .user-action div:hover, header .user-action a:hover{
 
 .container-section-wrapp{
     width: 100%;
-    margin: 128px 0;
+    padding: 128px 0;
 }
 
 .container-section-wrapp .container-section{
@@ -1924,6 +1950,10 @@ header .user-action div:hover, header .user-action a:hover{
     header .header-container nav ul{
         display: none;
         position: absolute;
+    }
+
+    header .header-container li::before{
+        content: none;
     }
 
     header .other-action div.phone img{
