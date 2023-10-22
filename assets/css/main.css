@@ -378,7 +378,7 @@ header .user-action div:hover, header .user-action a:hover{
 }
 
 .about-us .container-section-wrapp{
-    margin: 0;
+    padding: 0;
 }
 
 .prewie-block-wrap {
@@ -660,7 +660,7 @@ header .user-action div:hover, header .user-action a:hover{
     cursor: pointer;
     position: relative;
     right: 0;
-    z-index: 999;
+    z-index: 9999;
 }
 
 .content-wrapp .arrows-slider .arrow.isActive{
@@ -677,6 +677,10 @@ header .user-action div:hover, header .user-action a:hover{
 .container-section-wrapp{
     width: 100%;
     padding: 128px 0;
+}
+
+.arguments-section .container-section-wrapp{
+    padding-bottom: 0;
 }
 
 .container-section-wrapp .container-section{
@@ -1812,7 +1816,6 @@ header .user-action div:hover, header .user-action a:hover{
 .our-production-section .container-section-wrapp{
     max-width: 1314px;
     margin: 0 auto;
-    margin-bottom: 128px;
 }
 
 .our-production-section .container-section-wrapp .carousel-wrapp .item-wrapp{
@@ -1878,7 +1881,7 @@ header .user-action div:hover, header .user-action a:hover{
     opacity: 0;
     background: rgba(27, 31, 34, .5);
     backdrop-filter: blur(8px);
-    z-index: 1000;
+    z-index: 10000;
     pointer-events: none;
 }
 
