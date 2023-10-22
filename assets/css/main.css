@@ -262,6 +262,7 @@ header .other-action div{
     font-weight: 500;
     font-size: 12px;
     cursor: pointer;
+    position: relative;
 }
 
 header .user-action{
@@ -475,6 +476,10 @@ header .user-action div:hover, header .user-action a:hover{
     justify-content: end;
 }
 
+.prewie-block-wrap .header-wrapp .video{
+    cursor: pointer;
+}
+
 .prewie-block-wrap .header-wrapp .video img{
     position: relative;
     right: -5px;
@@ -655,7 +660,7 @@ header .user-action div:hover, header .user-action a:hover{
     cursor: pointer;
     position: relative;
     right: 0;
-    z-index: 9999;
+    z-index: 999;
 }
 
 .content-wrapp .arrows-slider .arrow.isActive{
@@ -1882,7 +1887,13 @@ header .user-action div:hover, header .user-action a:hover{
     pointer-events: all;
 }
 
-.modal-window-wrapp.isActive .modal-window .img-item{
+.modal-window-wrapp .modal-window .content{
+    top: 30px;
+    position: relative;
+    transition: .2s ease-in-out;
+}
+
+.modal-window-wrapp.isActive .modal-window .content{
     top: 0;
 }
 
@@ -1898,9 +1909,6 @@ header .user-action div:hover, header .user-action a:hover{
     width: 400px;
     height: 400px;
     border-radius: 28px; 
-    position: relative;
-    top: 30px;
-    transition: .2s ease-in-out;
 }
 
 .modal-window-wrapp .modal-window img{
@@ -1928,6 +1936,43 @@ header .user-action div:hover, header .user-action a:hover{
 
 .burger-menu-wrapp .burger-menu{
     margin: 32px 16px;
+}
+
+.language-list{
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    top: 10px;
+    right: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    background: var(--section-gray);
+}
+
+.language-list.isActive{
+    opacity: 1;
+    pointer-events: all;
+    top: 0;
+}
+
+.language-list li::before{
+    content: none;
+}
+
+.language-list li{
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.language-list li:not(.isActive):hover{
+    color: var(--text-color-active);
+}
+
+.language-list li.isActive{
+    background: rgba(255,62,65, .15);
+    color: var(--red-color);
 }
 
 /* Адаптив */
@@ -2935,6 +2980,16 @@ header .user-action div:hover, header .user-action a:hover{
     .burger-menu-wrapp .contacts-links-wrapp .contacts-links .contact-btns-wrapp .contact-btn-wrapp img{
         width: 20px;
         height: 20px;
+    }
+
+    .modal-window-wrapp .modal-window .content{
+        width: 300px;
+        height: 300px;
+    }
+
+    .modal-window-wrapp .modal-window .content iframe{
+        width: 300px;
+        height: 200px;
     }
 }
 

@@ -84,9 +84,15 @@
                   <span>8 (800) 222-75-26</span>
                   </a>
                </div>
-               <div class="language">
-                  <img src="assets/img/Web.svg">
-                  <span>ENG</span>
+               <div class="language-wrapp">
+                  <div class="language">
+                     <img src="assets/img/Web.svg">
+                     <span>ENG</span>
+                  </div>
+                  <span class="language-list">
+                     <li class="isActive">ENG</li>
+                     <li>RU</li>
+                  </span>
                </div>
             </div>
             <!-- Кнопки пользователя -->
@@ -231,9 +237,9 @@
             <div class="header-wrapp">
                <div class="header">
                   <div class="title">Точность без компромисcов</div>
-                  <a href="" class="video">
+                  <div class="video modal-open-item" data-name="video">
                   <img src="assets/img/video.svg">
-                  </a>
+                  </div>
                </div>
             </div>
             <!-- Карусель обертка-->
@@ -709,13 +715,13 @@
                <div class="carousel-wrapp">
                   <div class="slider" id="ourProductionSlider">
                      <div class="item-wrapp">
-                        <a href="assets/img/production/big-1.png" class="item photo-gallery-item"><img src="assets/img/production/big-1.png"></a>
+                        <a href="assets/img/production/big-1.png" class="item photo-gallery-item modal modal-open-item" data-name="photo"><img src="assets/img/production/big-1.png"></a>
                      </div>
                      <div class="item-wrapp">
-                        <a href="assets/img/production/mini-1.png" class="item-mini photo-gallery-item"><img src="assets/img/production/mini-1.png"></a>
-                        <a href="assets/img/production/mini-2.png" class="item-mini photo-gallery-item"><img src="assets/img/production/mini-2.png"></a>
-                        <a href="assets/img/production/mini-3.png" class="item-mini photo-gallery-item"><img src="assets/img/production/mini-3.png"></a>
-                        <a href="assets/img/production/mini-4.png" class="item-mini photo-gallery-item"><img src="assets/img/production/mini-4.png"></a>
+                        <a href="assets/img/production/mini-1.png" class="item-mini photo-gallery-item modal modal-open-item" data-name="photo"><img src="assets/img/production/mini-1.png"></a>
+                        <a href="assets/img/production/mini-2.png" class="item-mini photo-gallery-item modal modal-open-item" data-name="photo"><img src="assets/img/production/mini-2.png"></a>
+                        <a href="assets/img/production/mini-3.png" class="item-mini photo-gallery-item modal modal-open-item" data-name="photo"><img src="assets/img/production/mini-3.png"></a>
+                        <a href="assets/img/production/mini-4.png" class="item-mini photo-gallery-item modal modal-open-item" data-name="photo"><img src="assets/img/production/mini-4.png"></a>
                      </div>
                      <div class="item-wrapp">
                         <a href="assets/img/production/big-2.png" class="item photo-gallery-item"><img src="assets/img/production/big-2.png"></a>
@@ -908,10 +914,17 @@
             <a class="privacy-policy">Политика конфиденциальности</a>
          </div>
       </div>
-      <div class="modal-window-wrapp">
+      <div class="modal-window-wrapp" data-name="photo">
          <div class="modal-window">
-            <div class="img-item">
+            <div class="img-item content">
                <img src="">
+            </div>
+         </div>
+      </div>
+      <div class="modal-window-wrapp" data-name="video">
+         <div class="modal-window">
+            <div class="video-wrapp content">
+			      <iframe width="720" height="400" src="https://www.youtube.com/embed/donQb2rVWik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
          </div>
       </div>

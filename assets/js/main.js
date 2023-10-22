@@ -101,3 +101,50 @@ $(document).ready(function() {
     $(this).parent().toggleClass('isActive')
 })
 })
+
+// Открытие модалки
+
+$(function(){
+    $('.modal-open-item').click(function(){
+        var name = $(this).attr('data-name');
+        var modal = $(document).find('.modal-window-wrapp[data-name="' + name + '"]');
+        modal.addClass('isActive');
+        $('body').css('overflow-y', 'hidden');
+    })
+    $(document).mouseup( function(e){ 
+        var div = $( ".modal-window-wrapp .modal-window .img-item" );
+        if ( !div.is(e.target) 
+            && div.has(e.target).length === 0 ) { 
+            $('.modal-window-wrapp').removeClass('isActive');
+            $('body').css('overflow-y', '');
+
+        }
+    });
+});
+
+// Выпадашка смены языка
+
+$(document).ready(function() {
+    $('.language-wrapp .language').click(function(event) {
+        event.stopPropagation(); 
+
+        var list = $(this).siblings('.language-list');
+        list.toggleClass('isActive');
+
+        listItem = list.find('li');
+
+        listItem.click(function(){
+            if(!$(this).hasClass('isActive')){
+                listItem.removeClass('isActive');
+                $(this).addClass('isActive');
+                $('.language-list.isActive').removeClass('isActive');
+            }
+        })
+
+        $(document).on('click', function (event) {
+            if (!$(event.target).closest('.language-wrapp').length) {
+                $('.language-list.isActive').removeClass('isActive');
+            }
+        });
+    });
+});
